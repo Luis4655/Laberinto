@@ -1,0 +1,17 @@
+¿Cómo se ealiza la busqueda en un laberinto dado?
+
+Busqueda por amplitud:
+Crear una cola y agregar el nodo inicial a la cola.
+Mientras la cola no esté vacía, hacer lo siguiente:
+a. Extraer el primer nodo de la cola.
+b. Verificar si es el nodo de destino. Si es así, terminar la búsqueda y devolver el camino encontrado.
+c. Si no es el nodo de destino, expandir el nodo actual agregando sus vecinos a la cola y marcarlos como visitados.
+Si la cola se ha vaciado y no se ha encontrado un camino hasta el nodo de destino, entonces la búsqueda termina sin éxito.
+
+Busqueda por profundidad:
+Crear una pila y agregar el nodo inicial a la pila.
+Mientras la pila no esté vacía, hacer lo siguiente:
+a. Extraer el último nodo de la pila.
+b. Verificar si es el nodo de destino. Si es así, terminar la búsqueda y devolver el camino encontrado.
+c. Si no es el nodo de destino, expandir el nodo actual agregando sus vecinos a la pila y marcarlos como visitados.
+Si la pila se ha vaciado y no se ha encontrado un camino hasta el nodo de destino, entonces la búsqueda termina sin éxito.
